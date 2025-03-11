@@ -5,26 +5,26 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="CFG++"/>
-  <meta property="og:description" content="Project Page for CFG++"/>
-  <meta property="og:url" content="cfgpp-diffusion.github.io"/>
+  <meta property="og:title" content="SoftREPA"/>
+  <meta property="og:description" content="Project Page for SoftREPA"/>
+  <meta property="og:url" content="softrepa.github.io"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/images/banner_rainbow.png" />
+  <meta property="og:image" content="static/figures/banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="CFG++">
-  <meta name="twitter:description" content="Project Page for CFG++">
+  <meta name="twitter:title" content="SoftREPA">
+  <meta name="twitter:description" content="Project Page for SoftREPA">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/banner_rainbow.png">
-  <meta name="twitter:card" content="Project Page for CFG++">
+  <meta name="twitter:image" content="static/figures/banner.png">
+  <meta name="twitter:card" content="Project Page for SoftREPA">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>CFG++</title>
+  <title>SoftREPA</title>
   <link rel="icon" type="image/x-icon" href="">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -73,7 +73,7 @@
   .eps_cfg {
     color: rgb(231, 111, 81);
   }
-  .cfgpp{
+  .softrepa{
     color: rgb(42, 157, 143);
   }
 
@@ -106,19 +106,19 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"><span class="cfgpp">CFG++</span>: Manifold-constrained Classifier Free Guidance For Diffusion Models</h1>
+            <h1 class="title is-1 publication-title"><span class="softrepa">SoftREPA</span>: Aligning Text to Image in Diffusion Models is Easier Than You Think</h1>
+            <p>A lightweight and flexible contrastive learning method to improve text-image alignment in diffusion models.</p>
             <div class="is-size-4 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://www.hj-chung.com/" target="_blank">Hyungjin Chung</a><sup>*</sup>,</span>
+                <a href="https://www.linkedin.com/in/jaa-yeon-lee-21a892193/" target="_blank">Jaa-Yeon Lee</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="https://jeongsol.dev/" target="_blank">Jeongsol Kim</a><sup>*</sup>,</span>
+                  <a href="https://sites.google.com/view/byungheecha/home" target="_blank">Byunhee Cha</a><sup>*</sup>,</span>
                    <span class="author-block">
-                    <a href="https://geonyeong-park.github.io/" target="_blank">Geon Yeong Park</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                      <a href="https://www.linkedin.com/in/hyelin-nam-01ab631a3/" target="_blank">Hyelin Nam</a><sup>*</sup>,</span>
-                      <span class="author-block"> 
-                        <a href="https://scholar.google.com/citations?user=HNMjoNEAAAAJ&hl=en" target="_blank">Jong Chul Ye</a></span>
+                    <a href="https://jeongsol.dev/" target="_blank">Jeongsol Kim</a>,</span>
+                    <span class="author-block">
+                    <span class="author-block"> 
+                      <a href="https://scholar.google.com/citations?user=HNMjoNEAAAAJ&hl=en" target="_blank">Jong Chul Ye</a></span>
             </div> 
               <div class="is-size-4 publication-authors">
                 <span class="author-block" style="color:black"> KAIST </span>
@@ -128,7 +128,7 @@
           
                   <!-- PDF Link -->
                   <!-- <span class="link-block">
-                    <a href="static/pdfs/CFGPP.pdf" target="_blank"
+                    <a href="static/pdfs/softrepa.pdf" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     </ARXIV>
                     <span class="icon">
@@ -139,7 +139,8 @@
                   </span> -->
 
                   <span class="link-block">
-                    <a href="https://arxiv.org/abs/2406.08070" target="_blank"
+                    <!-- <a href="https://arxiv.org/abs/2406.08070" target="_blank" -->
+                    <a target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     </ARXIV>
                     <span class="icon">
@@ -151,7 +152,7 @@
               
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/CFGpp-diffusion/CFGpp" target="_blank"
+                    <a href="https://github.com/softrepa/SoftREPA" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -169,81 +170,116 @@
 <!-- Teaser Carousel-->
 <section class="hero teaser">
 
-  <div class="columns is-centered" style="margin-top:-20px">
+  <!-- <div class="columns is-centered" style="margin-top:-20px">
     <h1 class="is-size-3"> 
-      <mark style="background: rgb(255, 255, 102)"> CFG++ fixes CFG's issues with lower guidance scales, 
-        <!-- We decrease CFG gudiance weight to 0 &lt; $ \lambda $ &lt; 1 by revising DDIM renoising step. -->
-        <!-- Change $ \hat\epsilon^w_c $ → $ \hat\epsilon_\varnothing $ in CFG renoising -->
+      <mark style="background: rgb(255, 255, 102)"> SoftREPA fixes CFG's issues with lower guidance scales, 
   </div>
   <div class="columns is-centered" style="margin-top:-10px">
     <h1 class="is-size-3"> 
       <mark style="background: rgb(255, 255, 102)"> improving text-to-image quality and invertibility.
-        <!-- Revise DDIM renoising step  -->
-        <!-- ➜ smaller guidance scale 0 &lt; $ \lambda $ &lt; 1  better sampling & inversion -->
-        <!-- smooth generative trajectory, better sample quality, and superior inversion capability.</mark></h1> -->
-      <!-- <mark style="background: rgb(255, 255, 102)"> &#128073; smaller guidance scale 0 &lt; $ \lambda $ &lt; 1,  -->
-        <!-- better sample & inversion quality -->
       </mark></h1>
-  </div> 
+  </div>  -->
 
   <div class="hero-body">
     <div class="container">
     
       <div class="columns is-centered" style="margin-top:20px">
         <h1 class="is-size-4"> T2I Generation Results</h1>
-        <h1 class="is-size-5", style="margin-top:4px"> &nbsp;(SD v1.5, SDXL) </h1>
+        <h1 class="is-size-5", style="margin-top:4px"> &nbsp;(SD3) </h1>
       </div>  
 
       <div id="results-carousel" class="carousel results-carousel" style="margin-top:-25px">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/main_1.png" alt="MY ALT TEXT"/>
+        <img src="static/figures/t2igeneration-1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          “kayak in the water, optical color, aerial view, rainbow”
+          “...sign that reads ‘Othello’.”
         </h2>
       </div>
+
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/main_7.png" alt="MY ALT TEXT"/>
+        <img src="static/figures/t2igeneration-2.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          "dog jumping in front of moon gate, purple flowers, snowy mountain"
+          "A fire hydrant has some writing on its side."
         </h2>
       </div>
+
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/main_2.png" alt="MY ALT TEXT"/>
+        <img src="static/figures/t2igeneration-3.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          "selfie of a woman and her lion cub on the plains"
+          "Knolling of a drawing tools."
         </h2>
       </div>
+
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/main_3.png" alt="MY ALT TEXT"/>
+        <img src="static/figures/t2igeneration-4.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         "woman sniper, wearing soviet army uniform, in snow ground"
+         "Ethereal fantasy concept art of thunder god with hammer."
        </h2>
      </div>
+
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/main_4.png" alt="MY ALT TEXT"/>
+      <img src="static/figures/t2igeneration-5.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        "fisherman sitting on a tropical beach at sunset with bending palm trees"
+        "A yellow and green object with a brown bird on top of it."
       </h2>
     </div>
 
-    <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/main_5.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        "A man wearing a suit is taking a self portrait with a camera"
-      </h2>
-    </div>
+  </div>
 
-    <div class="item">
+
+  <div class="hero-body">
+
+  </div>
+    <div class="container">
+    
+      <div class="columns is-centered" style="margin-top:20px">
+        <h1 class="is-size-4"> Text Guided Image Editing Results</h1>
+        <h1 class="is-size-5", style="margin-top:4px"> &nbsp;(SD3) </h1>
+      </div>  
+
+      <div id="results-carousel" class="carousel results-carousel" style="margin-top:-25px">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/figures/editing-1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          "stone building” &rightarrow; “wooden lighthouse"
+        </h2>
+      </div>
+      
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/figures/editing-2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          “yellow building” &rightarrow; “red building, open door”
+        </h2>
+      </div>
+
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/figures/editing-3.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          “car” &rightarrow; “motorcycle”
+        </h2>
+      </div>
+
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/figures/editing-4.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          “green and white caterpillar”  &rightarrow; “blue and yellow butterfly”
+       </h2>
+     </div>
+
+     <div class="item">
       <!-- Your image here -->
-      <img src="static/images/main_6.png" alt="MY ALT TEXT"/>
+      <img src="static/figures/editing-5.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        "A painter study hard to learn how to draw …"
+        “rocky beach” &rightarrow; “sandy beach”
       </h2>
     </div>
 
@@ -260,44 +296,15 @@
         <div class="content has-text-justified">
 
           <p style="font-size:18px;">
-          Classifier-free guidance(CFG) is a fundamental tool in modern diffusion models for text-guided generation. 
-          Although effective, CFG's reliance on high guidance scales presents notable drawbacks. 
-          In response, we introduce simple solution to this seemingly inherent limitation: <strong>  CFG++ </strong> . 
-          This innovation addresses the off-manifold issue inherent in CFG, <strong> thereby enabling effective utilization 
-          of small guidance scales (0 &lt; $ \lambda $ &lt; 1) </strong>.
-         <br>
-
-        <table style="width: 80%; margin-left:auto; margin-right:auto; text-align: center; 
-        margin-top:20px; margin-bottom:20px; background-color: rgb(245, 242, 237);" border="3" cellpadding="3">
-          <tbody>
-            <tr>
-              <td style="width: 30%; font-size: 22px;"></td>
-              <td style="width: 35%; font-size: 22px;"><strong>CFG &#128531; </strong></td>
-              <td style="width: 35%; font-size: 22px;"><strong>CFG++ &#128513; </strong></td>
-            </tr>
-            <tr>
-              <td style="width: 30%; font-size: 20px; vertical-align:middle;">T2I Generation</td>
-              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Mode Collapse and Saturation</td>
-              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Better Sample Quality <br> & Adherence to text</td>
-            </tr>
-            <tr>
-              <td style="width: 30%; font-size: 20px; vertical-align:middle;">DDIM Inversion <br> w/ CFG(++)</td>
-              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Breakdown</td>
-              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Improves and enables better image editing</td>
-            </tr>
-            <tr>
-              <td style="width: 30%; font-size: 20px; vertical-align:middle;">PF-ODE trajectory</td>
-              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Unnatural, Curved</td>
-              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Smooth, Straighter</td>
-            </tr>
-          </tbody>
-        </table>
-        
-
-        Experimental results confirm that our method significantly enhances performance in text-to-image generation, 
-        DDIM inversion, editing, and solving inverse problems, suggesting a wide-ranging impact and potential applications 
-        in various fields that utilize text guidance.
-      </p>
+            While recent advancements in generative modeling have significantly improved text-image alignment, some residual misalignment between text and image representations still remains. 
+            Although many approaches have attempted to address this issue by fine-tuning models using various reward models, etc., we revisit the challenge from the perspective of representation alignment—an approach that has gained popularity with the success of REPresentation Alignment (REPA).
+            We first argue that conventional text-to-image (T2I) diffusion models, typically trained on paired image and text data (i.e., positive pairs) by minimizing score matching or flow matching losses, is suboptimal from the standpoint of representation alignment. 
+            Instead, a better alignment can be achieved through contrastive learning that leverages both positive and negative pairs.
+            To achieve this efficiently even with pretrained models, we introduce a lightweight contrastive fine-tuning strategy called SoftREPA that uses soft text tokens. 
+            This approach improves alignment with minimal computational overhead by adding fewer than 1M trainable parameters to the pretrained model. 
+            Our theoretical analysis demonstrates that our method explicitly increases the mutual information between text and image representations, leading to enhanced semantic consistency. 
+            Experimental results across text-to-image generation and text-guided image editing tasks validate the effectiveness of our approach in improving the semantic consistency of T2I generative models.
+          </p>
 
         </div>
       </div>
@@ -313,13 +320,13 @@
       <div class="column is-four-sixths">
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
-          <img src="static/images/rs_algorithm.png" alt="rs_algorithm"/>
+          <img src="static/figures/main-figure.jpg" alt="rs_algorithm"/>
           <p style=" font-size:18px;">
-            In CFG++, the renoising process after applying Tweedie’s formula should utilize the unconditional noise 
-            <span class="eps_null">$ \hat\epsilon_\varnothing $</span> instead of <span class="eps_cfg">$ \hat\epsilon^w_c $</span>. This surprisingly simple fix to the original CFG algorithm 
-            leads to smoother trajectory of generation. This improvement is also demonstrated in the following visualization of the discrete evolution of the posterior mean.
+            In SoftREPA, the soft tokens are optimized to contrastively match the score with positively conditioned predicted noise while repelling the score from negatively conditioned predicted noise. 
+            This process implicitly sharpens the joint probability distribution of images and text by reducing the log probability of negatively paired conditions.
+            The learnable soft tokens are prepended to the text features across the upper layers, with each layer’s previous soft tokens being replaced by the soft tokens of the current layer.
+
           </p>
-          <img src="static/images/tweedie_progression.png" alt="tweedie_progression"/>
         </div>
       </div>
     </div>
@@ -337,50 +344,44 @@
 
         <h2 class="title is-4">1. T2I Generation</h2>
         <div class="content has-text-justified" style="margin-top:-15px; margin-bottom: 30px;">
-          <img src="static/images/T2I_gen_w_interpolation.png" alt="t2i_gen_w_interpolation"/>
+          <img src="static/figures/exp1-results.jpg" alt="t2i_gen_w_interpolation"/>
+          <table>
+            <tr><th>Model</th><th>ImageReward ↑</th><th>CLIP ↑</th><th>HPS ↑</th><th>LPIPS ↓</th></tr>
+            <tr><td>SD1.5</td><td>0.177</td><td>0.265</td><td>0.251</td><td>0.438</td></tr>
+            <tr><td>SD1.5 + Ours</td><td><b>0.274</b></td><td><b>0.271</b></td><td>0.252</td><td>0.437</td></tr>
+            <tr><td>SDXL</td><td>0.750</td><td>0.267</td><td>0.273</td><td>0.420</td></tr>
+            <tr><td>SDXL + Ours</td><td><b>0.852</b></td><td><b>0.268</b></td><td><b>0.283</b></td><td>0.423</td></tr>
+            <tr><td>SD3</td><td>0.942</td><td>0.263</td><td>0.280</td><td>0.424</td></tr>
+            <tr><td>SD3 + Ours</td><td><b>1.085</b></td><td><b>0.269</b></td><td><b>0.289</b></td><td>0.428</td></tr>
+          </table>
           <p style="margin-top:5px; margin-bottom: 10px; font-size:18px;">
-            As demonstrated by the teaser images, our CFG++ method results in a smoother generation trajectory and superior quality.
-            Additionally, we visualize multiple images generated by CFG++ as we increase the guidance scale $ \gamma $.
-            The visualization shows a smooth transition from unconditional sampling towards highly conditional sampling. 
-          </p>
-        </div>
-
-        <div class="content has-text-justified" style="margin-top:-15px; margin-bottom: 30px;">
-          <img src="static/images/T2I_gen_lightning.png" alt="T2I_gen_lightning"/>
-          <p style="margin-top:5px; margin-bottom: 10px; font-size:18px;">
-            We find that the improvement gain from CFG++ is even more dramatic for distilled diffusion models such as SDXL-{turbo, lightning}.
-            We see significant boosts in the quality of the generated images, which is also depicted in the improvements seen in the above figure.
+            We evaluate SoftREPA across <b>diffusion</b> and <b>rectified flow</b> models, and across <b>UNet</b> and <b>Transformer</b> architectures.
+            Our approach consistently improves alignment and image quality on all fronts, demonstrating strong generalization.
           </p>
         </div>
         
-        <h2 class="title is-4"> 2. Inversion and Editing </h2>
+        <h2 class="title is-4"> 2. Text Guided Image Editing </h2>
         <div class="content has-text-justified" style="margin-top:-15px; margin-bottom: 30px;">
-          <img src="static/images/inv_algorithm.png" alt="inv_algorithm" style="margin-bottom:20px">
-          <img src="static/images/inversion_v2.png" alt="inversion"/>  
+          <img src="static/figures/exp2-editing.jpg" alt="inv_algorithm" style="margin-bottom:20px">
+          <table>
+            <tr><th>Model</th><th>Dataset</th><th>ImageReward ↑</th><th>CLIP ↑</th><th>HPS ↑</th><th>LPIPS ↓</th></tr>
+            <tr><td>FlowEdit</td><td>DIV2K</td><td>0.380</td><td>0.260</td><td>0.255</td><td>0.154</td></tr>
+            <tr><td>FlowEdit + Ours</td><td>DIV2K</td><td><b>0.466</b></td><td><b>0.263</b></td><td><b>0.260</b></td><td><b>0.149</b></td></tr>
+            <tr><td>FlowEdit</td><td>Cat2Dog</td><td>0.937</td><td>0.225</td><td>0.266</td><td>0.199</td></tr>
+            <tr><td>FlowEdit + Ours</td><td>Cat2Dog</td><td><b>1.111</b></td><td><b>0.226</b></td><td><b>0.269</b></td><td><b>0.173</b></td></tr>
+          </table>          
           <p style="margin-top:5px; margin-bottom: 30px; font-size: 18px;">
-            We demonstrate the effect of CFG++ on the image inversion task. (a) Notably, DDIM inversion with CFG++ consistently reconstructs
-            the source image across all guidance scales, whereas DDIM inversion with CFG fails to do so. (b) Quantitative results, including PSNR
-            and RMSE, show a consistent improvement in reconstruction performance.
+            SoftREPA boosts alignment and visual quality in editing tasks with fewer steps and lower CFG scale.
           </p>
         </div>
 
-        <div class="content has-text-justified" style="margin-bottom: 30px;">
-          <img src="static/images/inversion_n_editing_overview.png" alt="t2i_gen_w_interpolation"/>
-          <p style="margin-top:5px; font-size: 18px;">
-            The figures above compare image editing results using CFG and CFG++ followed by image inversion. 
-            During the editing stage, a word in the source text is swapped with the target concept, and this modified text 
-            is used as the condition for sampling. Our algorithm successfully works for both synthetic and real images.
-          </p>
-        </div>
-        
-      <h2 class="title is-4" style="margin-top:-20px;"> <br> 3. Text-conditioned Inverse Problems w/ <a href=" https://github.com/LituRout/PSLD/tree/main?tab=readme-ov-file" style="color:slateblue">PSLD</a></h2>
+      <h2 class="title is-4" style="margin-top:-20px;"> Key Contributions</h2>
       <div class="content has-text-justified">
-        <img src="static/images/ldis_main_v2.png" alt="ldis_main"/>
-          <p style="margin-top:5px; margin-bottom: 10px; font-size: 18px;">
-            We show that CFG++ enables the incorporation of text prompts into a standard diffusion inverse solvers. 
-            Specifically, we focus on comparing the performance of PSLD combined with CFG and CFG++ in solving linear inverse problems.
-            CFG++ consistently delivers high-quality reconstructions across all tasks.
-          </p>
+        <ul>
+          <li>📌 <b>SoftREPA</b> introduces soft tokens trained with contrastive learning.</li>
+          <li>⚡ Requires < 1M trainable parameters, minimal compute cost.</li>
+          <li>💡 Improves semantic alignment in generation and editing without model re-training.</li>
+        </ul>
       </div> 
 
       </div>
